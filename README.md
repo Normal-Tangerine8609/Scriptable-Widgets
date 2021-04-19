@@ -1,2 +1,2 @@
-# Scriptable-Widgets
-Some of the widgets I have made on scriptable.
+# Scriptable Widgets
+Here are all of the scriptable widgets I have made
