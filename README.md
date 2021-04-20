@@ -11,4 +11,4 @@ This is a small widget that is meant to showcase a random text post from the sub
 * Can choose what text is shown, such as hiding the footer or author name
 * Shows the amount of comments, awards and upvotes
 
-![Reddit Text Subreddit Widget]()
+![Reddit Text Subreddit Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
