@@ -76,5 +76,17 @@ Both of these widgets display the stats from a Routinehub account. The Routinehu
 
 ![Routinehub Stats Widget Double](Images/A0FD81D8-7894-45DA-8C21-5ED733D7BC86.jpeg)
 
+## Random Colour Generator Widget
+
+[Random Colour Generator Widget](Random-Colour-Generator-Widget.js)
+
+This widget has 2 different set ups. The first one is a small widget and will only display one colour and the hex of it. The second widget can be any size and displays multiple colours and their hex values.
+
+* Can easily change text colours and background colour for the multiple colour set up
+* Multiple colour set up have 4 colours for small, 8 colours for medium and 16 colours for large
+
+![Random Colour Generator Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+
+![Random Colour Generator Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
 
 
