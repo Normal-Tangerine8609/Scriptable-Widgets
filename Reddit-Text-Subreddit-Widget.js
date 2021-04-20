@@ -7,7 +7,6 @@
 // some good subreddits are showerthoughts, jokes, twosentencehorror, godtiersuperpowers,  quotes and todayilearned
 
 
-
 let widgetColour = "#000"
 let subreddit = "godtiersuperpowers"
 
@@ -31,6 +30,7 @@ let footerColour = "#fff"
 let footerSize = 11
 let showFooter = true
 
+//Do Not Change Below
 let widget = new ListWidget()
 widget.backgroundColor = new Color(widgetColour)
 let date = new Date()
