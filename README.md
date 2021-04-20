@@ -43,3 +43,16 @@ This is a small widget that shows today’s special days. The days are grabbed f
 * Can change starting text sizes
 
 ![Special Days Widget](Images/FE7AC454-A824-49C3-85EA-801AC26CB022.jpeg)
+
+## Word Of The Day Widget
+
+[Word Of The Day Widget](Word-Of-The-Day-Widget.js)
+
+This is a small widget that shows today’s word of the day. The word is grabbed from https://www.merriam-webster.com/word-of-the-day/. The definitions will have a chance not to work. So far all of the words have worked but since all of the definitions are formatted differently they could be a bit messed up. If you see “➤” in a definition than the following word is a synonym of the previous definition.
+
+* Can easily change text colours and background colour
+* Different colours can be active if dark mode is on or if light mode is on
+* Shows the type of word, pronunciation and syllables, as well as the definition
+
+![Word Of The Day Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+
