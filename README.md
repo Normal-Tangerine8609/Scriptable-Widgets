@@ -30,3 +30,16 @@ This is a small widget that shows a daily quote and the author. The quote is gra
 * Can change starting text sizes
 
 ![Daily Quote Widget](Images/56EE7F4E-EF41-404F-9044-C3B7BF6C7C1A.jpeg)
+
+## Special Days Widget
+
+[Special Days Widget](Special-Days-Widget.js)
+
+This is a small widget that shows today’s special days. The days are grabbed from https://www.daysoftheyear.com/. This widget will display up to 5 special days.
+
+* Can easily change text colours and background colour
+* Different colours can be active if dark mode is on or if light mode is on
+* Can choose to show the title or not
+* Can change starting text sizes
+
+![Special Days Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
