@@ -74,7 +74,7 @@ Both of these widgets display the stats from a Routinehub account. The Routinehu
 
 ![Routinehub Stats Widget](Images/696D4C54-FD7C-4189-8048-E9DCED431B7F.jpeg)
 
-![Routinehub Stats Widget Double](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Routinehub Stats Widget Double](Images/A0FD81D8-7894-45DA-8C21-5ED733D7BC86.jpeg)
 
 
 
