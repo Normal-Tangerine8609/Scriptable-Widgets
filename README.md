@@ -58,4 +58,23 @@ This is a small widget that shows today’s word of the day. The word is grabbed
 
 ![Word Of The Day Widget](Images/FA72E0BE-A81A-4A91-9D0F-DD04B064F6F1.jpeg)
 
+## Routinehub Stats Widget
+
+[Routinehub Stats Widget](Routinehub-Stats-Widget.js)
+
+[Routinehub Stats Widget Double](Routinehub-Stats-Widget-Double.js)
+
+Both of these widgets display the stats from a Routinehub account. The Routinehub Stats Widget displays the stats of one person in a small or medium widget. The Routinehub Stats Widget Double  displays the stats of two people on a medium widget.
+
+* Can easily change text colours and background colour/gradient
+* Can change text sizes and choose to display text instead of the symbols
+* Shows the number of shortcuts posted, number of downloads, number of hearts (this might not work for all accounts) and the average downloads per shortcut
+* You can set a download goal and there is a progress bar at the bottom of the widget for it
+* The progress bar can change colours when it is fully completed
+
+![Routinehub Stats Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+
+![Routinehub Stats Widget Double](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+
+
 
