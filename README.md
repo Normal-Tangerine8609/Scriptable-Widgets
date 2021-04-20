@@ -5,6 +5,9 @@ Here are all of the scriptable widgets I have made.
 ***
 
 ## Reddit Text Subreddit Widget
+
+[Reddit Text Subreddit Widget](Reddit-Text-Subreddit-Widget.js)
+
 This is a small widget that is meant to showcase a random text post from the subreddit of your choice.
 
 * Can easily change text colours and background colour
