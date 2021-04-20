@@ -85,8 +85,8 @@ This widget has 2 different set ups. The first one is a small widget and will on
 * Can easily change text colours and background colour for the multiple colour set up
 * Multiple colour set up have 4 colours for small, 8 colours for medium and 16 colours for large
 
-![Random Colour Generator Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Random Colour Generator Widget](Images/DA69B4A1-26C2-4D90-9E95-663A056B69B3.jpeg)
 
-![Random Colour Generator Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Random Colour Generator Widget](Images/94CDB470-146F-4367-B61C-94A84201ABA4.jpeg)
 
 
