@@ -29,4 +29,4 @@ This is a small widget that shows a daily quote and the author. The quote is gra
 * Can choose to show the author or not
 * Can change starting text sizes
 
-![Daily Quote Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Daily Quote Widget](Images/56EE7F4E-EF41-404F-9044-C3B7BF6C7C1A.jpeg)
