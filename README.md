@@ -42,4 +42,4 @@ This is a small widget that shows today’s special days. The days are grabbed f
 * Can choose to show the title or not
 * Can change starting text sizes
 
-![Special Days Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Special Days Widget](Images/FE7AC454-A824-49C3-85EA-801AC26CB022.jpeg)
