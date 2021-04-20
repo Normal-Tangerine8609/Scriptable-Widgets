@@ -12,3 +12,5 @@ This is a small widget that is meant to showcase a random text post from the sub
 * Shows the amount of comments, awards and upvotes
 
 ![Reddit Text Subreddit Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+
+![Reddit Text Subreddit Widget](Images/3C822DAC-8B4A-45BF-8DE1-CD4E94151534.jpeg)
