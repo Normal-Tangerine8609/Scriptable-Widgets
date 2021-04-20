@@ -72,7 +72,7 @@ Both of these widgets display the stats from a Routinehub account. The Routinehu
 * You can set a download goal and there is a progress bar at the bottom of the widget for it
 * The progress bar can change colours when it is fully completed
 
-![Routinehub Stats Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Routinehub Stats Widget](Images/696D4C54-FD7C-4189-8048-E9DCED431B7F.jpeg)
 
 ![Routinehub Stats Widget Double](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
 
