@@ -54,5 +54,8 @@ This is a small widget that shows today’s word of the day. The word is grabbed
 * Different colours can be active if dark mode is on or if light mode is on
 * Shows the type of word, pronunciation and syllables, as well as the definition
 
-![Word Of The Day Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Word Of The Day Widget](Images/3A0E59FF-D918-464D-86EC-00CF66892C22.jpeg)
+
+![Word Of The Day Widget](Images/3A0E59FF-D918-464D-86EC-00CF66892C22.jpeg)
+
 
