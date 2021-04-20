@@ -56,6 +56,6 @@ This is a small widget that shows today’s word of the day. The word is grabbed
 
 ![Word Of The Day Widget](Images/3A0E59FF-D918-464D-86EC-00CF66892C22.jpeg)
 
-![Word Of The Day Widget](Images/3A0E59FF-D918-464D-86EC-00CF66892C22.jpeg)
+![Word Of The Day Widget](Images/FA72E0BE-A81A-4A91-9D0F-DD04B064F6F1.jpeg)
 
 
