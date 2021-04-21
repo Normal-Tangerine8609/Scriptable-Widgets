@@ -100,6 +100,6 @@ This widget displays your chest cycle visually on your Home Screen.
 * Different colours can be active if dark mode is on or if light mode is on
 * Can be transparent
 
-![Clash Royale Chest Cycle Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Clash Royale Chest Cycle Widget](Images/1FB3A95F-E692-4AB0-869D-6387257EFFC1.jpeg)
 
 
