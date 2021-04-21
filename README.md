@@ -116,5 +116,19 @@ This small widget displays your clan’s war day stats.
 
 ![Clash Royale War Race Widget](Images/BD1A59F5-C363-4C62-A066-0DC151822EE3.jpeg)
 
+## Clash Royale Pro Deck Widget
+
+[Clash Royale Pro Deck  Widget](Clash-Royale-Pro-Deck-Widget.js)
+
+This small widget displays a random deck of the leaderboard. You can also tap the widget to go right into Clash Royale to paste the deck. 
+
+* Can easily change text colours and background colour
+* Can change the approximate time for each widget refresh
+* Different colours can be active if dark mode is on or if light mode is on
+* Can choose how low from 1-1000 to get the deck from on the leaderboard
+* Shows the pictures of the cards in the deck, the deck’s owner and their position on the leaderboard
+
+![Clash Royale Pro Deck Widget](Images/9828BDB9-A74B-464A-B9CA-126883A3E6A0.jpeg)
+
 
 
