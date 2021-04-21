@@ -59,6 +59,19 @@ This is a small widget that shows today’s word of the day. The word is grabbed
 
 ![Word Of The Day Widget](Images/FA72E0BE-A81A-4A91-9D0F-DD04B064F6F1.jpeg)
 
+## On This Day In History
+
+[On This Day In History](On-This-Day-In-History.js)
+
+This small widget displays a random event that happened on this day in history.
+
+* Can easily change text colours and background colour
+* Can choose to reveal the title or not
+* Different colours can be active if dark mode is on or if light mode is on
+* Can make the title display as the date or “On This Date “Today In History”
+
+![On This Day In History](Images/119A7D02-7870-4DA0-A943-BD89B465BD95.jpeg)
+
 ## Routinehub Stats Widget
 
 [Routinehub Stats Widget](Routinehub-Stats-Widget.js)
