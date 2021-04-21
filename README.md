@@ -93,7 +93,7 @@ This widget has 2 different set ups. The first one is a small widget and will on
 
 [Clash Royale Chest Cycle Widget](Clash-Royale-Chest-Cycle-Widget.js)
 
-This widget displays your chest cycle visually on your Home Screen.
+This small widget displays your chest cycle visually on your Home Screen.
 
 * Can easily change text colours and background colour
 * Can change the approximate time for each widget refresh
