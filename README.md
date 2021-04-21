@@ -114,7 +114,7 @@ This small widget displays your clan’s war day stats.
 * Show all 5 clans’ fame
 * Shows the amount of players on your clan with a low fame (you set the limit), the amount of war decks used today and in total and the amount of boat attacks attempts made
 
-![Clash Royale War Race Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+![Clash Royale War Race Widget](Images/BD1A59F5-C363-4C62-A066-0DC151822EE3.jpeg)
 
 
 
