@@ -1,6 +1,6 @@
 # Scriptable Widgets
 
-Here are all of the scriptable widgets I have made.
+Here are all of the scriptable widgets I have made. This following picture showcases some of them.
 
 ![Widgets](Images/027D2CDC-0002-421B-B7AB-5A2DBA9C22F7.jpeg)
 ***
