@@ -1,82 +1,94 @@
 //This is meant for a small widget
 //You can change the bellow
-//Enter hex colours in double quotes for the colours. The light colour will be active if light mode is on and the dark colour will be active if dark mode is on.
-//Enter numbers for the sizes and space bellow
-//Enter true or false for showTitle
-
+//Enter hex colours in double quotes for the colours.
 let backgroundColourLight = "#fff"
 let backgroundColourDark = "#000"
 
-let titleSize = 15
 let titleColourLight =  "#000"
 let titleColourDark =  "#fff"
-let spaceingBelowTitle = 5
-let showTitle = true
 
-let daySize = 15
-let dayColourLight =  "#000"
-let dayColourDark =  "#fff"
-spaceingBelowDay = 3
+let textColourLight =  "#000"
+let textColourDark =  "#fff"
 
 //Do not Change Below
 //Sets correct colours
 let backgroundColour = Color.dynamic(new Color(backgroundColourLight),new Color(backgroundColourDark))
 let titleColour = Color.dynamic(new Color(titleColourLight),new Color(titleColourDark))
-let dayColour = Color.dynamic(new Color(dayColourLight),new Color(dayColourDark))
+let textColour = Color.dynamic(new Color(textColourLight),new Color(textColourDark))
 
-//Sets up stuff
-let url = "https://www.daysoftheyear.com/"
+//Gets everything
+let url = "https://www.merriam-webster.com/word-of-the-day/"
 let req = new Request(url)
 let html = await req.loadString()
-let currentDate =  new Date
-currentDate = currentDate.toDateString()
 
-//Makes widget
+//Gets the Word
+let word = html.split("<title>Word of the Day: ")[1]
+word = word.split(" | Merriam-Webster</title>")[0]
+console.log(word)
+
+//Gets the pronunciation and syllables
+let pronunciation = html.split('<span class="word-syllables">')[2]
+pronunciation = pronunciation.split("</span>")[0]
+console.log(pronunciation)
+
+//Gets type, like verb
+let type = html.split('<span class="main-attr">')[1]
+type = type.split("</span>")[0]
+console.log(type)
+
+//Gets the first definition. This might not work for all of the words because they are not all set up the same. But it will work for most words. The ➤ in the definition means that the following word is a synonym of the definition.
+let def = html.split("<h2>Definition</h2>")[1]
+def = def.split("<p>")[1]
+
+def = def.split("</em>")
+if(def.length > 1) {
+def = def[1]
+def = def.split(" <strong>:</strong> ").join("")
+def = "old-fashioned word for " + def
+} else {
+def = def[0]
+}
+def = def.split("<strong>:</strong>").join("➤")
+def = def.split("</p>")[0]
+def = def.split(/<a[^>]*>|<\/a>/).join("")
+def = def.replace(/\<strong\>.*?\<\/strong\>/g)
+
+console.log(def)
+
+//Makes the widget
 let widget = new ListWidget()
 widget.backgroundColor = backgroundColour
+widget.url =  "https://www.merriam-webster.com/word-of-the-day"
 let date = new Date()
 date.setHours(date.getHours() + 3)
 widget.refreshAfterDate = date
-widget.url = url
 
-//Adds title
-if (showTitle) {
-let title = widget.addText("Today Is...")
-title.font = Font.mediumRoundedSystemFont(titleSize)
+//Adds the word to the widget
+let title = widget.addText(word)
+title.font = Font.mediumRoundedSystemFont(20)
 title.textColor = titleColour
 title.centerAlignText()
-widget.addSpacer(spaceingBelowTitle)
-}
+title.minimumScaleFactor = .7
+title.lineLimit = 1
+widget.addSpacer(10)
 
-//Gets special days
-for(var i = 1; i < 6; i++) {
-//Finds date and formats it
-let date = html.split('<div class="date_day">')[i]
-date = date.split('</div>')[0]
-date = date.split("st,").join("")
-date = date.split("th,").join("")
-date = date.split("nd,").join("")
-date = date.split("rd,").join("")
-let day = html.split('class="js-link-target">')[i]
-//Finds special day
-day = day.split("</a>")[0]
-date = new Date(date)
-date = date.toDateString()
+//Adds the type and pronunciation to the widget
+let text = widget.addText(type + " | " + pronunciation)
+text.font = Font.mediumRoundedSystemFont(15)
+text.textColor = textColour
+text.centerAlignText()
+text.minimumScaleFactor = .3
+text.lineLimit = 1
+widget.addSpacer(10)
 
-//Adds special day if it is today
-if (date === currentDate) {
-//puts in '
-day = day.split("&#8217;").join("'")
-day = widget.addText(day)
-day.font = Font.mediumRoundedSystemFont(daySize)
-day.textColor = dayColour
-day.minimumScaleFactor = .5
-day.lineLimit = 1
-widget.addSpacer(spaceingBelowDay)
-}
-}
+//Adds the definition to the Widget
+def = widget.addText(def)
+def.font = Font.mediumRoundedSystemFont(13)
+def.textColor = textColour
+def.centerAlignText()
+def.minimumScaleFactor = .5
 
-//Compleats the script
+//Completes the script 
 widget.presentSmall()
 Script.setWidget(widget)
 Script.complete()
