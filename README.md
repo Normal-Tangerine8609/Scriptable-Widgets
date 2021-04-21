@@ -2,7 +2,7 @@
 
 Here are all of the scriptable widgets I have made.
 
-![Widgets]()
+![Widgets](Images/027D2CDC-0002-421B-B7AB-5A2DBA9C22F7.jpeg)
 ***
 
 ## Reddit Text Subreddit Widget
