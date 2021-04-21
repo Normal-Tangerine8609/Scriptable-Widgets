@@ -89,4 +89,16 @@ This widget has 2 different set ups. The first one is a small widget and will on
 
 ![Random Colour Generator Widget](Images/94CDB470-146F-4367-B61C-94A84201ABA4.jpeg)
 
+## Clash Royale Chest Cycle Widget
+
+[Clash Royale Chest Cycle Widget](Clash-Royale-Chest-Cycle-Widget.js)
+
+This widget displays your chest cycle visually on your Home Screen.
+
+* Can easily change text colours and background colour
+* Can change the approximate time for each widget refresh
+* Different colours can be active if dark mode is on or if light mode is on
+
+![Clash Royale Chest Cycle Widget](Images/36A3BC3B-6D42-46DA-ACF6-D77036307FDF.jpeg)
+
 
