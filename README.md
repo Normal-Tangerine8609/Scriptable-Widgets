@@ -1,8 +1,7 @@
 # Scriptable Widgets
 
-Here are all of the scriptable widgets I have made. This following picture showcases some of them.
+Here are all of the scriptable widgets I have made.
 
-![Widgets](Images/027D2CDC-0002-421B-B7AB-5A2DBA9C22F7.jpeg)
 ***
 
 ## Reddit Text Subreddit Widget
