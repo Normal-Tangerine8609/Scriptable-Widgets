@@ -51,7 +51,7 @@ def = def[0]
 def = def.split("<strong>:</strong>").join("➤")
 def = def.split("</p>")[0]
 def = def.split(/<a[^>]*>|<\/a>/).join("")
-def = def.replace(/\<strong\>.*?\<\/strong\>/g)
+def = def.replace(/\<strong\>.*?\<\/strong\>/g, "")
 
 console.log(def)
 
