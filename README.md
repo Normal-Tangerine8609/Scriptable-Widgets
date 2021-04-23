@@ -67,7 +67,7 @@ This small widget displays a random event that happened on this day in history.
 * Can easily change text colours and background colour
 * Can choose to reveal the title or not
 * Different colours can be active if dark mode is on or if light mode is on
-* Can make the title display as the date or “On This Date “Today In History”
+* Can make the title display as the date or “Today In History”
 
 ![On This Day In History](Images/119A7D02-7870-4DA0-A943-BD89B465BD95.jpeg)
 
