@@ -58,6 +58,17 @@ This is a small widget that shows today’s word of the day. The word is grabbed
 
 ![Word Of The Day Widget](Images/FA72E0BE-A81A-4A91-9D0F-DD04B064F6F1.jpeg)
 
+## Urban Dictionary Word Of The Day Widget
+
+[Urban Dictionary Word Of The Day Widget](Urban-Dictionary-Word-Of-The-Day-Widget.js)
+
+This small widget displays The word of the day from urban dictionary. Because of this some of the words could have poor definitions or be NSFW.
+
+* Can easily change text colours and background colour
+* Different colours can be active if dark mode is on or if light mode is on
+
+![Urban Dictionary Word Of The Day Widget](Images/A5FE3ED8-6D7D-4ED4-B237-2171FE473E00.jpeg)
+
 ## On This Day In History
 
 [On This Day In History](On-This-Day-In-History.js)
