@@ -4,7 +4,7 @@
 //Enter hex colours in double quotes for the colours. The light colour will be active if light mode is on and the dark colour will be active if dark mode is on.
 //Enter your player tag below  without the # but still in double quotes.
 
-let player = "GYUQQCLV"
+let player = "GRY2LYY9"
 let backgroundColourDark = "#000"
 let backgroundColourLight = "#fff"
 let textColourDark = "#fff"
@@ -32,7 +32,8 @@ let chestList = {
   MagicalChest: "https://cdn.royaleapi.com/static/img/chests/chest-magical.png?t=0ed9f582a",
   EpicChest: "https://cdn.royaleapi.com/static/img/chests/chest-epic.png?t=741b36a8a",
   MegaLightningChest: "https://cdn.royaleapi.com/static/img/chests/chest-megalightning.png?t=a6ec47cfc",
-  LegendaryChest: "https://cdn.royaleapi.com/static/img/chests/chest-legendary.png?t=9ef4bb1ba"
+  LegendaryChest: "https://cdn.royaleapi.com/static/img/chests/chest-legendary.png?t=9ef4bb1ba",
+  GoldCrate: "https://cdn.royaleapi.com/static/img/ui/gold-crate-golden-fs8.png?t=ac11a8a2c"
 }
 
 let widget = new ListWidget()
