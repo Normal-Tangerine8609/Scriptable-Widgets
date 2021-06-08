@@ -124,7 +124,7 @@ This small widget displays your chest cycle visually on your Home Screen.
 * Can change the approximate time for each widget refresh
 * Different colours can be active if dark mode is on or if light mode is on
 * Can be transparent
-
+* Added a golden crate chest
 ![Clash Royale Chest Cycle Widget](Images/1FB3A95F-E692-4AB0-869D-6387257EFFC1.jpeg)
 
 ## Clash Royale War Race Widget
