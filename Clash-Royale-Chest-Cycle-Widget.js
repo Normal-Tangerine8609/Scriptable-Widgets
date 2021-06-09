@@ -33,7 +33,9 @@ let chestList = {
   EpicChest: "https://cdn.royaleapi.com/static/img/chests/chest-epic.png?t=741b36a8a",
   MegaLightningChest: "https://cdn.royaleapi.com/static/img/chests/chest-megalightning.png?t=a6ec47cfc",
   LegendaryChest: "https://cdn.royaleapi.com/static/img/chests/chest-legendary.png?t=9ef4bb1ba",
-  GoldCrate: "https://cdn.royaleapi.com/static/img/ui/gold-crate-golden-fs8.png?t=ac11a8a2c"
+  GoldCrate: "https://cdn.royaleapi.com/static/img/chests/chest-goldcrate.png?t=9ef4bb1ba",
+  PlentifulGoldCrate: "https://cdn.royaleapi.com/static/img/chests/chest-plentifulgoldcrate.png?t=9ef4bb1ba",
+  OverflowingGoldCrate:"https://cdn.royaleapi.com/static/img/chests/chest-overflowinggoldcrate.png?t=9ef4bb1ba"
 }
 
 let widget = new ListWidget()
