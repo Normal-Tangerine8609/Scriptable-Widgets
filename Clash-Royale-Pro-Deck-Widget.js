@@ -117,6 +117,7 @@ Wizard:"26000017",
 XBow:"27000008",
 Zap:"28000008",
 Zappies:"26000052",
+GoblinDrill:"27000013",
 }
 //Sets correct colours
 let backgroundColour = Color.dynamic(new Color(backgroundColourLight),new Color(backgroundColourDark))
