@@ -152,6 +152,7 @@ This small widget displays a random deck of the leaderboard. You can also tap th
 * Different colours can be active if dark mode is on or if light mode is on
 * Can choose how low from 1-1000 to get the deck from on the leaderboard
 * Shows the pictures of the cards in the deck, the deck’s owner and their position on the leaderboard
+* Goblin Drill has been added
 
 ![Clash Royale Pro Deck Widget](Images/9828BDB9-A74B-464A-B9CA-126883A3E6A0.jpeg)
 
