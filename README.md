@@ -128,20 +128,6 @@ This small widget displays your chest cycle visually on your Home Screen.
 * Added a golden crate chest
 ![Clash Royale Chest Cycle Widget](Images/1FB3A95F-E692-4AB0-869D-6387257EFFC1.jpeg)
 
-## Clash Royale War Race Widget
-
-[Clash Royale War Race Widget](Clash-Royale-War-Race-Widget.js)
-
-This small widget displays your clan’s war day stats.
-
-* Can easily change text colours and background colour
-* Can change the approximate time for each widget refresh
-* Different colours can be active if dark mode is on or if light mode is on
-* Show all 5 clans’ fame
-* Shows the amount of players on your clan with a low fame (you set the limit), the amount of war decks used today and in total and the amount of boat attacks attempts made
-
-![Clash Royale War Race Widget](Images/BD1A59F5-C363-4C62-A066-0DC151822EE3.jpeg)
-
 ## Clash Royale Pro Deck Widget
 
 [Clash Royale Pro Deck  Widget](Clash-Royale-Pro-Deck-Widget.js)
