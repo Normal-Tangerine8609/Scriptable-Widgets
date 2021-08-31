@@ -53,7 +53,7 @@ This is a small widget that shows today’s word of the day. The word is grabbed
 * Can easily change text colours and background colour
 * Different colours can be active if dark mode is on or if light mode is on
 * Shows the type of word, pronunciation and syllables, as well as the definition
-* New: Some more HTML entities were replaced with real characters
+* New: Fixed definitions from changes in the website
 
 ![Word Of The Day Widget](Images/3A0E59FF-D918-464D-86EC-00CF66892C22.jpeg)
 
@@ -80,6 +80,7 @@ This small widget displays a random event that happened on this day in history.
 * Can choose to reveal the title or not
 * Different colours can be active if dark mode is on or if light mode is on
 * Can make the title display as the date or “Today In History”
+* New: Replaced some HTML entities with the normal characters
 
 ![On This Day In History](Images/119A7D02-7870-4DA0-A943-BD89B465BD95.jpeg)
 
