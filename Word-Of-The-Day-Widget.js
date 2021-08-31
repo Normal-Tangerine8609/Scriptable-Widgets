@@ -36,26 +36,11 @@ let type = html.split('<span class="main-attr">')[1]
 type = type.split("</span>")[0]
 console.log(type)
 
-//Gets the first definition. This might not work for all of the words because they are not all set up the same. But it will work for most words. The ➤ in the definition means that the following word is a synonym of the definition.
-let def = html.split("<h2>Definition</h2>")[1]
+//Gets the definition
+let def = html.split("<h2>What It Means</h2>\n")[1]
 def = def.split("<p>")[1]
-
-def = def.split("</em>")
-if(def.length > 1) {
-def = def[1]
-def = def.split(" <strong>:</strong> ").join("")
-def = "old-fashioned word for " + def
-} else {
-def = def[0]
-}
-
-if(def.startsWith("<strong>:</strong>")) {
-def = def.replace(/\<strong\>.*?\<\/strong\>/, "")
-}
-def = def.split("<strong>:</strong>").join("➤")
 def = def.split("</p>")[0]
-def = def.split(/<a[^>]*>|<\/a>/).join("")
-def = def.replace(/\<strong\>.*?\<\/strong\>/, "")
+def = def.replace(/\<em\>(.*?)\<\/em\>/, "$1")
 
 console.log(def)
 
