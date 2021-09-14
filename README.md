@@ -53,7 +53,7 @@ This is a small widget that shows today’s word of the day. The word is grabbed
 * Can easily change text colours and background colour
 * Different colours can be active if dark mode is on or if light mode is on
 * Shows the type of word, pronunciation and syllables, as well as the definition
-* New: Replaced links (<a href=""> and </a>)
+* New: Replaced links (&lt;a href=""> and &lt;/a>)
 
 ![Word Of The Day Widget](Images/3A0E59FF-D918-464D-86EC-00CF66892C22.jpeg)
 
