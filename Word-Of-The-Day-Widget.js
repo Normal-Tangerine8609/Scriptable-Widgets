@@ -41,6 +41,7 @@ let def = html.split("<h2>What It Means</h2>\n")[1]
 def = def.split("<p>")[1]
 def = def.split("</p>")[0]
 def = def.replace(/\<em\>(.*?)\<\/em\>/, "$1")
+def = def.split(/<a[^>]*>|<\/a>/).join("")
 
 console.log(def)
 
