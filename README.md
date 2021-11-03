@@ -125,7 +125,7 @@ This small widget displays your chest cycle visually on your Home Screen.
 * Can change the approximate time for each widget refresh
 * Different colours can be active if dark mode is on or if light mode is on
 * Can be transparent
-* Added a golden crate chest
+* This script no longer works with the Royal wild chest added
 ![Clash Royale Chest Cycle Widget](Images/1FB3A95F-E692-4AB0-869D-6387257EFFC1.jpeg)
 
 ## Clash Royale Pro Deck Widget
@@ -139,7 +139,7 @@ This small widget displays a random deck of the leaderboard. You can also tap th
 * Different colours can be active if dark mode is on or if light mode is on
 * Can choose how low from 1-1000 to get the deck from on the leaderboard
 * Shows the pictures of the cards in the deck, the deck’s owner and their position on the leaderboard
-* Goblin Drill has been added
+* This script no longer works with the new champions added
 
 ![Clash Royale Pro Deck Widget](Images/9828BDB9-A74B-464A-B9CA-126883A3E6A0.jpeg)
 
