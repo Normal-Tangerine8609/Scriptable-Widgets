@@ -41,6 +41,7 @@ This is a small widget that shows today’s special days. The days are grabbed f
 * Different colours can be active if dark mode is on or if light mode is on
 * Can choose to show the title or not
 * Can change starting text sizes
+* New: replaced html tags
 
 ![Special Days Widget](Images/FE7AC454-A824-49C3-85EA-801AC26CB022.jpeg)
 
