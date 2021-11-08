@@ -69,6 +69,7 @@ if (date === currentDate) {
 day = day.split("&#8217;").join("'")
 day = day.split("&nbsp;").join(" ")
 day = day.split("&amp;").join("&")
+day = day.replace(/<[^>]*>/g, "")
 day = widget.addText(day)
 day.font = Font.mediumRoundedSystemFont(daySize)
 day.textColor = dayColour
