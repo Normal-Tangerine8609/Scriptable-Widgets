@@ -115,34 +115,3 @@ This widget has 2 different set ups. The first one is a small widget and will on
 ![Random Colour Generator Widget](Images/DA69B4A1-26C2-4D90-9E95-663A056B69B3.jpeg)
 
 ![Random Colour Generator Widget](Images/94CDB470-146F-4367-B61C-94A84201ABA4.jpeg)
-
-## Clash Royale Chest Cycle Widget
-
-[Clash Royale Chest Cycle Widget](Clash-Royale-Chest-Cycle-Widget.js)
-
-This small widget displays your chest cycle visually on your Home Screen.
-
-* Can easily change text colours and background colour
-* Can change the approximate time for each widget refresh
-* Different colours can be active if dark mode is on or if light mode is on
-* Can be transparent
-* This script no longer works with the Royal wild chest added
-![Clash Royale Chest Cycle Widget](Images/1FB3A95F-E692-4AB0-869D-6387257EFFC1.jpeg)
-
-## Clash Royale Pro Deck Widget
-
-[Clash Royale Pro Deck  Widget](Clash-Royale-Pro-Deck-Widget.js)
-
-This small widget displays a random deck of the leaderboard. You can also tap the widget to go right into Clash Royale to paste the deck. 
-
-* Can easily change text colours and background colour
-* Can change the approximate time for each widget refresh
-* Different colours can be active if dark mode is on or if light mode is on
-* Can choose how low from 1-1000 to get the deck from on the leaderboard
-* Shows the pictures of the cards in the deck, the deck’s owner and their position on the leaderboard
-* This script no longer works with the new champions added
-
-![Clash Royale Pro Deck Widget](Images/9828BDB9-A74B-464A-B9CA-126883A3E6A0.jpeg)
-
-
-
