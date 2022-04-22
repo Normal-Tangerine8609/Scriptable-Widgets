@@ -2,6 +2,15 @@
 
 Here are all of the scriptable widgets I have made.
 
+* [Reddit Text Subreddit Widget](#reddit-text-subreddit-widget)
+* [Daily Quote Widget](#daily-quote-widget)
+* [Special Days Widget](#special-days-widget)
+* [Word Of The Day Widget](#word-of-the-day-widget)
+* [Urban Dictionary Word Of The Day Widget](#urban-dictionary-word-of-the-day-widget)
+* [On This Day In History](#on-this-day-in-history)
+* [Routinehub Stats Widget](#routinehub-stats-widget)
+* [Random Colour Generator Widget](#random-colour-generator-widget)
+
 - - - -
 
 ## Reddit Text Subreddit Widget
