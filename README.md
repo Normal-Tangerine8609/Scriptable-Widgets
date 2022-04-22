@@ -10,6 +10,7 @@ Here are all of the scriptable widgets I have made.
 * [On This Day In History](#on-this-day-in-history)
 * [Routinehub Stats Widget](#routinehub-stats-widget)
 * [Random Colour Generator Widget](#random-colour-generator-widget)
+* [Weather Circles](#weather-cricles)
 
 - - - -
 
@@ -94,7 +95,7 @@ This small widget displays a random event that happened on this day in history s
 
 Both of these widgets display the stats from a Routinehub account. The Routinehub Stats Widget displays the stats of one person in a small or medium widget. The Routinehub Stats Widget Double  displays the stats of two people on a medium widget.
 
-> This widget is outdated and no longer updated, but still works. The code is terribly written as it was one of my first widgets created.  
+> This widget is outdated and no longer updated, but still works. The code is terribly written as it was one of my first widgets created.    
 
 * Easily change text colours and background colour/gradient
 * Change text sizes and choose to display text instead of the symbols
@@ -118,3 +119,15 @@ This widget has 2 different set ups. The first one is a small widget and will on
 ![Random Colour Generator Widget](Images/DA69B4A1-26C2-4D90-9E95-663A056B69B3.jpeg)
 
 ![Random Colour Generator Widget](Images/94CDB470-146F-4367-B61C-94A84201ABA4.jpeg)
+
+## Weather Circles
+
+This small widget displays the weather condition and weather statistics for your location in circular progress bars. This widget uses https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget to create the widget and https://openweathermap.org/ to get the weather data (you will need a free api key).
+
+* Easily change text, background, circular progress bar and SF symbol colours
+* Colours support dark and light mode changing 
+* Select the latitude and longitude for your location and choose to use metric or imperial data
+* Change minimum and maximum levels of temperature and other types of weather provided to gear the percentages to you
+* Easily change order of circular progress bars and the interior symbols
+
+![Weather Circles](Images/3DAF95B5-7DF0-42F4-856B-4F8BA662729A.jpeg)
