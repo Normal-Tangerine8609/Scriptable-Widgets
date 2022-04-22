@@ -10,7 +10,7 @@ Here are all of the scriptable widgets I have made.
 * [On This Day In History](#on-this-day-in-history)
 * [Routinehub Stats Widget](#routinehub-stats-widget)
 * [Random Colour Generator Widget](#random-colour-generator-widget)
-* [Weather Circles](#weather-cricles)
+* [Weather Circles](#weather-circles)
 
 - - - -
 
