@@ -122,6 +122,8 @@ This widget has 2 different set ups. The first one is a small widget and will on
 
 ## Weather Circles
 
+[Weather Circles](scripts/weather-circles.js)
+
 This small widget displays the weather condition and weather statistics for your location in circular progress bars. This widget uses https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget to create the widget and https://openweathermap.org/ to get the weather data (you will need a free api key).
 
 * Easily change text, background, circular progress bar and SF symbol colours
