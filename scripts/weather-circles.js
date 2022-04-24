@@ -179,7 +179,7 @@ let progressCircles = []
 for(let type of order) {
   
   // The value of the weather type
-  let value = parseFloat(weatherValues[type])
+  let value = Math.abs(parseFloat(weatherValues[type]))
   
   // If the type is precipitation convert it to a percentage
   if(type == "precipitation"){
@@ -238,7 +238,7 @@ async function getData() {
   // See if the file does not exist or was not yet modified today
   if(!fm.fileExists(file) || currentDate.toDateString() != updated.toDateString()) {
     // Get the weather data
-    let url = `https://api.openweathermap.org/data/2.5/onecall?exclude=minutely,hourly,current,alerts&lat=${lat}&lon=-${lon}&APPID=${apiKey}&units=${useMetric?"metric":"imperial"}`
+    let url = `https://api.openweathermap.org/data/2.5/onecall?exclude=minutely,hourly,current,alerts&lat=${lat}&lon=${lon}&APPID=${apiKey}&units=${useMetric?"metric":"imperial"}`
     let r = new Request(url)
     let weatherData = await r.loadJSON()
     // Save today's weather data
