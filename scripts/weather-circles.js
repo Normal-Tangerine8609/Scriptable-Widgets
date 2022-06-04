@@ -181,6 +181,7 @@ for (let type of order) {
 	// If the type is precipitation convert it to a percentage
 	if (type == "precipitation") {
 		value *= 100
+                value = Math.round(value)
 	}
 
 	// The unchanged value of the weather type
