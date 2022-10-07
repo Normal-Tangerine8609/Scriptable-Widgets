@@ -165,6 +165,9 @@ This small or medium widget displays a random web api from the MDN [list](https:
 
 This script allows you to create widgets using a HTML-like syntax. Here is an example of the code and widget image for a Reddit widget.
 
+<details>
+  <summary>Reveal Code</summary>
+
 ```javascript
 const htmlWidget = importModule("html-widget")
 const symbol = importModule("html-widget-symbol")
@@ -218,6 +221,8 @@ Script.setWidget(widget)
 widget.presentSmall()
 Script.complete()
 ```
+
+</details>
 
 ![Reddit widget](images/html-reddit-widget.jpeg)
 
