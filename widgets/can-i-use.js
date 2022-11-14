@@ -22,6 +22,9 @@
 *    styling progress circles
 *    transparentBackground: `boolean`, to show the background, or track, of the progress circle or not
 *    The rest of the values in this object set the colours of the progress circle. The values should not be regular scriptable colours but html colours. This is because the progress circles are made with a WebView. The values can also be 2 html colours split by hyphens (-) for the first colour to be the light mode colour and second the dark mode colour.
+*
+* WIDGET PARAMETERS
+* The widgets can have a parameter of stats (that must be located in the `stats` array) split by commas. The accessory widgets will pick a random one of these stats to display. Home screen widgets will display the stats in order and will use non-parameter stats randomly if there are not enough stats provided.
 */
 
 const stats = [
@@ -41,7 +44,6 @@ const styles = {
   textColor: Color.dynamic(Color.black(), new Color("#fff", 0.85)),
   backgroundColor: Color.dynamic(Color.white(), new Color("#121212")),
   progressCircle: {
-    // remember to say how colours are html only
     success: "hsl(120, 60%, 55%)",
     successBackground: "hsl(120, 55%, 40%)",
     warning: "hsl(40, 100%, 55%)",
@@ -52,7 +54,6 @@ const styles = {
   },
   accessory: {
     accessoryBackground: false,
-    // inline widget
     sfSymbol: {
       success: "checkmark.shield",
       warning: "exclamationmark.triangle",
