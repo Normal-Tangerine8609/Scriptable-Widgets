@@ -12,6 +12,7 @@ Here are all of the scriptable widgets I have made.
 * [Random Colour Generator Widget](#random-colour-generator-widget)
 * [Weather Circles](#weather-circles)
 * [MDN Web Api Widget](#mdn-web-api-widget)
+* [Can I Use](#can-i-use)
 
 And some scripts
 
@@ -155,7 +156,18 @@ This small or medium widget displays a random web api from the MDN [list](https:
 * Colours support dark and light mode changing
 * Catch the web api data for reuse if not connected to data
 
-![MDN Web Api Widget](images/mdn-web-api-widget.jpeg)
+### Can I Use
+
+[Can I Use](widgets/can-i-use.js)
+
+This Lock Screen and Home Screen widget displays latest browser support data from [caniuse.com](https://caniuse.com/).
+
+* Easily change theme colours
+* Colours support dark and light mode changing
+* Choose what stats you want to view using the widget parameters
+
+![Can I Use Lock Screen](images/can-i-use-lock-screen.jpeg)
+![Can I Use Small Widget](images/can-i-use-small.JPG)
 
 ## Scripts
 
