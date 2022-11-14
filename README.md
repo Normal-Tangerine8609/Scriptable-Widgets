@@ -166,7 +166,7 @@ This Lock Screen and Home Screen widget displays latest browser support data fro
 * Colours support dark and light mode changing
 * Choose what stats you want to view using the widget parameters
 
-![Can I Use Lock Screen](images/can-i-use-lock-screen.jpeg)
+![Can I Use Lock Screen](images/can-i-use-lock-screen.jpg)
 ![Can I Use Small Widget](images/can-i-use-small.JPG)
 
 ## Scripts
