@@ -98,8 +98,7 @@ async function getData() {
     for(let i = 1; i < 6; i++) {
       
       // Match out the date
-      let date = new Date(html.match(/<div class="date_day">(.+?)<\/div>/g)[i].match(/<div class="date_day">(.+?)<\/div>/)[1].replace(/(st|th|nd|rd),/g,""))
-      
+      let date = new Date(html.match(/<div class="date_day">(.+?)<\/div>/g)[i].match(/<div class="date_day">(.+?)<\/div>/)[1].match(/<time.+?="(.+?)">/)[1])
       // Convert date to the same format as the current date
       date = date.toDateString()
       
