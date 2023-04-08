@@ -1,6 +1,5 @@
 /*
 URBAN DICTIONARY WORD OF THE DAY (small widget)
-
 Setup
 - Variables with the suffix `ColourLight` or `ColourDark`should be a hex colour string. The colours are used as the light mode or dark mode colour for what the variable name describes
 */
@@ -80,14 +79,15 @@ async function getData() {
   
   // See if the file does not exist or was not yet modified today
   if(!fm.fileExists(file) || currentDate.toDateString() != updated.toDateString()) {
-  
-    // If it was, get the data
-    let req = new Request("https://www.urbandictionary.com/")
-    let html = await req.loadString()
-
-    // Match out the needed information
-    let word = html.match(/<h1[^>]*>(.+?)<\/h1>/)[1].replace(/<a[^>]*>|<\/a>/g,"")
-    let def = html.match(/<div class="meaning mb-4">(.+?)<\/div>/)[1].replace(/<a[^>]*>|<\/a>/g,"").split("<br/>").join("")
+    
+    const webView = new WebView()
+    await webView.loadURL("https://www.urbandictionary.com/")
+    const word = await webView.evaluateJavaScript("document.querySelector('.word').innerText")
+    const def = await webView.evaluateJavaScript("document.querySelector('.meaning').innerText")
+    const example = await webView.evaluateJavaScript("document.querySelector('.example').innerText")
+    console.log(word)
+    console.log(def)
+    console.log(example)
 
     // Write the data
     fm.writeString(file, JSON.stringify({word,def}))
