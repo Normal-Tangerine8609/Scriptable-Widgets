@@ -1,5 +1,6 @@
 /*
 URBAN DICTIONARY WORD OF THE DAY (small widget)
+
 Setup
 - Variables with the suffix `ColourLight` or `ColourDark`should be a hex colour string. The colours are used as the light mode or dark mode colour for what the variable name describes
 */
