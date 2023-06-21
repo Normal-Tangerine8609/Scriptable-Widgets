@@ -13,6 +13,7 @@ Here are all of the scriptable widgets I have made.
 * [Weather Circles](#weather-circles)
 * [MDN Web Api Widget](#mdn-web-api-widget)
 * [Can I Use](#can-i-use)
+* [Tildes Widget](#tildes-widget)
 
 And some scripts
 
@@ -168,6 +169,18 @@ This Lock Screen and Home Screen widget displays latest browser support data fro
 
 ![Can I Use Lock Screen](images/can-i-use-lock-screen.jpg)
 ![Can I Use Small Widget](images/can-i-use-small.JPG)
+
+### Tildes Widget
+
+[Tildes Widget](widgets/tildes-widget.js)
+
+This small widget displays recent posts from [tildes.net](https://tildes.net/).
+
+* Easily change theme colours
+* Choose sizing variables
+* Choose what posts you want to view using the widget parameters
+
+![Tildes Widget](images/tildes-widget.JPG)
 
 ## Scripts
 
