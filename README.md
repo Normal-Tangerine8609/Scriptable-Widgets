@@ -31,7 +31,7 @@ And some scripts
 
 [Reddit Text Subreddit Widget](widgets/reddit-text-subreddit-widget.js)
 
-This is a small widget that is meant to showcase a random text post from the subreddit of your choosing.
+This small widget is meant to showcase a random text post from your chosen subreddit.
 
 * Easily change background and text colours
 * Choose what text to show, such as hiding the footer or author name
@@ -45,7 +45,7 @@ This is a small widget that is meant to showcase a random text post from the sub
 
 [Daily Quote Widget](widgets/daily-quote-widget.js)
 
-This is a small widget that shows a daily quote and the author. The quote is scrapped from https://www.brainyquote.com/quote_of_the_day.
+This small widget shows a daily quote and the author. The quote is scrapped from https://www.brainyquote.com/quote_of_the_day.
 
 * Easily change text colours and the background colour
 * Colours support dark and light mode changing 
@@ -57,7 +57,7 @@ This is a small widget that shows a daily quote and the author. The quote is scr
 
 [Special Days Widget](widgets/special-days-widget.js)
 
-This is a small widget that shows today’s special days. The days are scraped from https://www.daysoftheyear.com/. This widget will display up to 5 special days.
+This small widget shows today's special days. The days are scraped from https://www.daysoftheyear.com/. This widget will display up to 5 special days.
 
 * Easily change text colours and the background colour
 * Colours support dark and light mode changing
@@ -68,7 +68,7 @@ This is a small widget that shows today’s special days. The days are scraped f
 
 [Word Of The Day Widget](widgets/word-of-the-day.js)
 
-This is a small widget that shows today’s word of the day. The word is scraped from https://www.merriam-webster.com/word-of-the-day/.
+This small widget shows today’s word of the day. The word is scraped from https://www.merriam-webster.com/word-of-the-day/.
 
 * Easily change text colours and the background colour
 * Colours support dark and light mode changing 
@@ -106,14 +106,15 @@ This small widget displays a random event that happened on this day in history s
 
 [Routinehub Stats Widget Double](widgets/routinehub-medium.js)
 
-Both of these widgets display the stats from a Routinehub account. The Routinehub Stats Widget displays the stats of one person in a small or medium widget. The Routinehub Stats Widget Double  displays the stats of two people on a medium widget.
+Both of these widgets display the stats from a Routinehub account. The Routinehub Stats Widget displays one person's stats in a small or medium widget. The Routinehub Stats Widget Double displays two people's stats on a medium widget.
 
-> This widget is outdated and no longer updated, but still works. The code is terribly written as it was one of my first widgets created.      
+> [!WARNING]
+> This widget is outdated and no longer updated.
 
 * Easily change text colours and background colour/gradient
 * Change text sizes and choose to display text instead of the symbols
 * Shows the number of shortcuts posted, number of downloads, number of hearts (this might not work for all accounts) and the average downloads per shortcut
-* You can set a download goal and there is a progress bar at the bottom of the widget for it
+* You can set a download goal, and there is a progress bar at the bottom of the widget for it
 * The progress bar can change colours when it is fully completed
 
 ![Routinehub Stats Widget](images/routine-hub-stats-small-widget.jpeg)
@@ -124,10 +125,10 @@ Both of these widgets display the stats from a Routinehub account. The Routinehu
 
 [Random Colour Generator Widget](widgets/random-colour-generator.js)
 
-This widget has 2 different set ups. The first one is a small widget and will only display one colour and the hex of it. The second widget can be any size and displays multiple colours and their hex values.
+This widget has two different setups. The first one is a small widget and will only display one colour and the hex of it. The second widget can be any size, displaying multiple colours and their hex values.
 
-* Easily change text colours and background colour for the multiple colour set up
-* Multiple colour set up have 4 colours for small, 8 colours for medium and 16 colours for large
+* Easily change text and background colours for the multiple-colour setup
+* Multiple-colour set up has four colours for small, eight colours for medium, and 16 colours for large
 
 ![Random Colour Generator Widget](images/random-colour-1-widget.jpeg)
 
@@ -137,13 +138,16 @@ This widget has 2 different set ups. The first one is a small widget and will on
 
 [Weather Circles](widgets/weather-circles.js)
 
-This small widget displays the weather condition and weather statistics for your location in circular progress bars. This widget uses https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget to create the widget and https://openweathermap.org/ to get the weather data (you will need a free api key but it may not work with the latest api keys).
+> [!WARNING]  
+> This script no longer works because of changes in Open Weather Map and HTML Widget
+
+This small widget displays your location's weather conditions and weather statistics in circular progress bars. This widget uses https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget to create the widget and https://openweathermap.org/ to get the weather data (you will need a free API key but it may not work with the latest api keys).
 
 * Easily change text, background, circular progress bar and SF symbol colours
 * Colours support dark and light mode changing 
 * Select the latitude and longitude for your location and choose to use metric or imperial data
 * Change minimum and maximum levels of temperature and other types of weather provided to gear the percentages to you
-* Easily change order of circular progress bars and the interior symbols
+* Easily change the order of circular progress bars and the interior symbols
 
 ![Weather Circles](images/weather-circles-widget.jpeg)
 
@@ -151,17 +155,19 @@ This small widget displays the weather condition and weather statistics for your
 
 [MDN Web Api](widgets/mdn-web-api.js)
 
-This small or medium widget displays a random web api from the MDN [list](https://developer.mozilla.org/en-US/docs/Web/API).
+This small or medium widget displays a random web API from the MDN [list](https://developer.mozilla.org/en-US/docs/Web/API).
 
-* Easily change theme colours and sf symbols
+* Easily change theme colours and SF symbols
 * Colours support dark and light mode changing
-* Catch the web api data for reuse if not connected to data
+* Catch the web API data for reuse if not connected to data
+
+![MDN Web Api Widget](images/mdn-web-api-widget.jpeg)
 
 ### Can I Use
 
 [Can I Use](widgets/can-i-use.js)
 
-This Lock Screen and Home Screen widget displays latest browser support data from [caniuse.com](https://caniuse.com/).
+This Lock Screen and Home Screen widget displays the latest browser support data from [caniuse.com](https://caniuse.com/).
 
 * Easily change theme colours
 * Colours support dark and light mode changing
@@ -188,7 +194,7 @@ This small widget displays recent posts from [tildes.net](https://tildes.net/).
 
 [HTML Widget](https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget)
 
-This script allows you to create widgets using a HTML-like syntax. Here is an example of the code and widget image for a Reddit widget.
+This script allows you to create widgets using an HTML-like syntax. Here is an example of the code and widget image for a Reddit widget.
 
 <details>
   <summary>Reveal Code</summary>
@@ -255,11 +261,13 @@ Script.complete()
 
 [Git Script Download & Update](scripts/git-script-download-update/README.md)
 
-This script tracks downloaded scriptable scripts from github and updates them.
+This script tracks downloaded scriptable scripts from Git Hub and updates them.
 
 * Small widget and Lock Screen widgets
 * Easy to use
 * Works from Sharesheet or scriptable
+
+![Git Script Download And Update](images/git-script-download-update-widget.jpeg)
 
 ### RSS Parser
 
