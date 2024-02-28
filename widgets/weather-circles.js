@@ -3,7 +3,7 @@ WEATHER CIRCLES (small widget)
 
 The html-widget module must be installed for this script to work.
 
-1. Copy the file from https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget/blob/main/module/module.js
+1. Copy the file from https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget/blob/main/code/html-widget.js
 2. Paste it in a new scriptable file
 3. Rename the file to html-widget
 */
@@ -17,9 +17,9 @@ lon       = the longitude of where you want the weather data from
 useMetric = true or false to use metric or imperial
 */
 
-const apiKey = "YOUR API KEY"
-const lat = 100
-const lon = 100
+const apiKey = "APIKEY"
+const lat = 66.795
+const lon = -87.435
 const useMetric = true
 
 /*
@@ -181,7 +181,7 @@ for (let type of order) {
 	// If the type is precipitation convert it to a percentage
 	if (type == "precipitation") {
 		value *= 100
-                value = Math.round(value)
+         value = Math.round(value)
 	}
 
 	// The unchanged value of the weather type
@@ -263,119 +263,128 @@ async function getData() {
 const htmlWidget = importModule("html-widget")
 
 // Html widget template for adding SF symbols
-const symbol = async (validate, template, update, styles, attrs, innerText) => {
-	const mapping = {
-		"url": "url",
-		"border-color": "colour",
-		"border-width": "posInt",
-		"corner-radius": "posInt",
-		"image-size": "size",
-		"image-opacity": "decimal",
-		"tint-color": "colour",
-		"resizable": "bool",
-		"container-relative-shape": "bool",
-		"content-mode": "contentMode",
-		"align-image": "alignImage"
-	}
-
-	validate(attrs, styles, mapping)
-	update(styles, mapping)
-
-	let symbol = SFSymbol.named(innerText)
-	if (!symbol) {
-		symbol = SFSymbol.named("questionmark.circle")
-	}
-	let symbolSize = 100
-	if (styles["image-size"] !== "null") {
-		let [width, height] = styles["image-size"].match(/\d+/g)
-		symbolSize = parseInt(width > height ? height : width)
-	}
-	symbol.applyFont(Font.systemFont(symbolSize))
-	await template(`
+const symbol = async (
+  validate,
+  template,
+  update,
+  styles,
+  attrs,
+  innerText
+) => {
+  const mapping = {
+    url: "url",
+    borderColor: "colour",
+    borderWidth: "posInt",
+    cornerRadius: "posInt",
+    imageSize: "size",
+    imageOpacity: "decimal",
+    tintColor: "colour",
+    resizable: "bool",
+    containerRelativeShape: "bool",
+    contentMode: "contentMode",
+    alignImage: "alignImage"
+  }
+  validate(attrs, styles, mapping)
+  update(styles, mapping)
+  
+  let symbol = SFSymbol.named(innerText)
+  if(!symbol){
+    symbol = SFSymbol.named("questionmark.circle")
+  }
+  
+  let symbolSize = 100
+  if(styles.imageSize !== "null") {
+    let [width,height] = styles.imageSize.match(/\d+/g)
+    symbolSize = parseInt((width > height) ? height : width)
+  }
+  symbol.applyFont(Font.systemFont(symbolSize))
+  await template(`
 <img 
-  src="data:image/png;base64,${Data.fromPNG(symbol.image).toBase64String()}" 
+  src="data:image/png;base64,${Data.fromPNG(
+    symbol.image
+  ).toBase64String()}" 
   url="${styles.url}" 
-  border-color="${styles["border-color"]}"
-  border-width="${styles["border-width"]}" 
-  corner-radius="${styles["corner-radius"]}" 
-  image-size="${styles["image-size"]}" 
-  image-opacity="${styles["image-opacity"]}" 
-  tint-color="${styles["tint-color"]}" 
-  content-mode="${styles["content-mode"]}" 
-  align-image="${styles["align-image"]}" 
-  container-relative-shape="${styles["container-relative-shape"]}" 
-  resizable="${styles["resizable"]}"
+  borderColor="${styles.borderColor}"
+  borderWidth="${styles.borderWidth}" 
+  cornerRadius="${styles.cornerRadius}" 
+  imageSize="${styles.imageSize}" 
+  imageOpacity="${styles.imageOpacity}" 
+  tintColor="${styles.tintColor}" 
+  contentMode="${styles.contentMode}" 
+  alignImage="${styles.alignImage}" 
+  containerRelativeShape="${styles.containerRelativeShape}" 
+  resizable="${styles.resizable}"
 />
   `)
 }
 
 // Html widget template for adding circular progress bars
 const progressCircle = async (
-	validate,
-	template,
-	update,
-	styles,
-	attrs,
-	innerText
+  validate,
+  template,
+  update,
+  styles,
+  attrs,
+  innerText
 ) => {
-	const mapping = {
-		"url": "url",
-		"empty-background": "colour",
-		"progress-background": "colour",
-		"size": "posInt",
-		"value": "decimal",
-		"bar-width": "posInt"
-	}
- 
-	validate(attrs, styles, mapping)
-	let value = /\d*(?:\.\d*)?%?/.exec(attrs.value)[0]
-	if (value.endsWith("%")) {
-		value = Number(value.replace("%", ""))
-		value /= 100
-	}
-	if (!attrs.value) {
-		throw new Error("`progress-circle` tag must have a `value` attribute")
-	}
-	if (value < 0) {
-		throw new Error(`\`value\` attribute must be above \`0\`: ${attrs.value}`)
-	}
-	if (value > 1) {
-		throw new Error(`\`value\` attribute must be below \`1\`: ${attrs.value}`)
-	}
+  const mapping = {
+    url: "url",
+    emptyBackground: "colour",
+    progressBackground: "colour",
+    size: "posInt",
+    value: "decimal",
+    barWidth: "posInt"
+  }
 
-	let size = Number(styles.size && styles.size !== "null" ? styles.size : 100)
-	let width = Number(
-		styles["bar-width"] && styles["bar-width"] !== "null"
-			? styles["bar-width"]
-			: 10
-	)
-	async function isUsingDarkAppearance() {
-		return !Color.dynamic(Color.white(), Color.black()).red
-	}
-	let isDark = await isUsingDarkAppearance()
+  validate(attrs, styles, mapping)
+  let value = /\d*(?:\.\d*)?%?/.exec(attrs.value)[0]
+  if (value.endsWith("%")) {
+    value = Number(value.replace("%", ""))
+    value /= 100
+  }
+  if (!attrs.value) {
+    throw new Error("`progress-circle` tag must have a `value` attribute")
+  }
+  if (value < 0) {
+    throw new Error(`\`value\` attribute must be above \`0\`: ${attrs.value}`)
+  }
+  if (value > 1) {
+    throw new Error(`\`value\` attribute must be below \`1\`: ${attrs.value}`)
+  }
 
-	let colour = styles["empty-background"] || "black-white"
-	if (colour.split("-").length > 1) {
-		if (isDark) {
-			colour = colour.split("-")[1]
-		} else {
-			colour = colour.split("-")[0]
-		}
-	}
-	let progressColour = styles["progress-background"] || "gray"
-	if (progressColour.split("-").length > 1) {
-		if (isDark) {
-			progressColour = progressColour.split("-")[1]
-		} else {
-			progressColour = progressColour.split("-")[0]
-		}
-	}
+  let size = Number(styles.size && styles.size !== "null" ? styles.size : 100)
+  let width = Number(
+    styles.barWidth && styles.barWidth !== "null"
+      ? styles.barWidth
+      : 10
+  )
+  async function isUsingDarkAppearance() {
+    return !Color.dynamic(Color.white(), Color.black()).red
+  }
+  let isDark = await isUsingDarkAppearance()
 
-	let w = new WebView()
+  let colour = styles.emptyBackground || "black-white"
+  if (colour.split("-").length > 1) {
+    if (isDark) {
+      colour = colour.split("-")[1]
+    } else {
+      colour = colour.split("-")[0]
+    }
+  }
+  let progressColour = styles.progressBackground || "gray"
+  if (progressColour.split("-").length > 1) {
+    if (isDark) {
+      progressColour = progressColour.split("-")[1]
+    } else {
+      progressColour = progressColour.split("-")[0]
+    }
+  }
 
-	await w.loadHTML('<canvas id="c"></canvas>')
-	let base = await w.evaluateJavaScript(
-		`var colour = "${colour}",
+  let w = new WebView()
+
+  await w.loadHTML('<canvas id="c"></canvas>')
+  let base = await w.evaluateJavaScript(
+    `var colour = "${colour}",
     progressColour = "${progressColour}",
     size = ${size}*3,
     lineWidth = ${width}*3,
@@ -401,18 +410,20 @@ const progressCircle = async (
   c.arc( posX, posY, (size-lineWidth-1)/2, (Math.PI/180) * 270, (Math.PI/180) * (270 + result) )
   c.stroke()
   completion(canvas.toDataURL())`,
-		true
-	)
-    
-	await template(`
+    true
+  )
+
+  await template(`
     <stack url="${
-			styles.url || "null"
-		}"  size="${size},${size}" background="${base}" align-content="center" padding="${
-		width * 2
-	}" children="true">
+      styles.url || "null"
+    }"  size="${size},${size}" background="${base}" align-content="center" padding="${
+    width * 2
+  }" children="true">
     </stack>
   `)
 }
+
+
 
 let addons = {progressCircle, symbol}
 
@@ -426,8 +437,8 @@ let w = await htmlWidget(
       text-color: ${text};
     }
     progressCircle {
-      size:30;
-      bar-width:5;
+      size: 30;
+      bar-width: 5;
     }
     progressCircle > symbol {
       image-size: 15,15;
