@@ -139,7 +139,7 @@ This widget has two different setups. The first one is a small widget and will o
 [Weather Circles](widgets/weather-circles.js)
 
 > [!WARNING]  
-> This script no longer works because of changes in Open Weather Map and HTML Widget
+> This script no longer works because of changes in Open Weather Map unless you have an older API key.
 
 This small widget displays your location's weather conditions and weather statistics in circular progress bars. This widget uses https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget to create the widget and https://openweathermap.org/ to get the weather data (you will need a free API key but it may not work with the latest api keys).
 
