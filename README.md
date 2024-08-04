@@ -14,6 +14,7 @@ Here are all of the scriptable widgets I have made.
 * [MDN Web Api Widget](#mdn-web-api-widget)
 * [Can I Use](#can-i-use)
 * [Tildes Widget](#tildes-widget)
+* [Commander Articles](#commander-articles)
 
 And some scripts
 
@@ -187,6 +188,18 @@ This small widget displays recent posts from [tildes.net](https://tildes.net/).
 * Choose what posts you want to view using the widget parameters
 
 ![Tildes Widget](images/tildes-widget.JPG)
+
+### Commander Articles
+
+[Commander Articles](widgets/commander-articles.js)
+
+This small or medium widget displays recent articles from [EDHREC](https://edhrec.com) or [Commander's Herald](https://commandersherald.com/).
+
+* Easily change theme colours
+* Choose your preferred website to view articles from
+* Highlight articles you follow
+
+![Commander Articles](images/commander-articles.JPEG)
 
 ## Scripts
 
