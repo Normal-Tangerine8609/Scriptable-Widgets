@@ -166,7 +166,7 @@ if (config.widgetFamily === "small") {
 
   bottomBar.addSpacer(space / 2);
 
-  const categoryText = bottomBar.addText(data[0].category[0]);
+  const categoryText = bottomBar.addText(Array.isArray(data[i].category) ? data[i].category[0] : data[i].category);
   categoryText.lineLimit = 1;
   categoryText.font = new Font(theme.font, bottomBarSize);
   categoryText.minimumScaleFactor = 0.8;
@@ -219,7 +219,7 @@ if (config.widgetFamily === "small") {
 
     bottomBar.addSpacer(space / 2);
 
-    const categoryText = bottomBar.addText(data[i].category[0]);
+    const categoryText = bottomBar.addText(Array.isArray(data[i].category) ? data[i].category[0] : data[i].category);
     categoryText.lineLimit = 1;
     categoryText.font = new Font(theme.font, bottomBarSize);
     categoryText.minimumScaleFactor = 0.8;
