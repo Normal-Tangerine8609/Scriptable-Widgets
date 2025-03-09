@@ -159,7 +159,7 @@ async function getData() {
 
     const apiMiniHtml = apis[Math.floor(Math.random() * apis.length)] // get random from array 58
 
-    const name = apiMiniHtml.match(/<a href=".+?">(.+?)<\/a>/)[1]
+    const name = apiMiniHtml.match(/<a href=".+?">(.+?)<\/a>/)[1].replace(/<\/?code>/g, "")
     const endpoint = apiMiniHtml.match(/href="(.+?)"/)[1]
 
     const url = "https://developer.mozilla.org" + endpoint
