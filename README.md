@@ -1,6 +1,6 @@
 # Scriptable Widgets
 
-Here are all of the scriptable widgets I have made.
+Here are all of the scriptable widgets I have made:
 
 * [Reddit Text Subreddit Widget](#reddit-text-subreddit-widget)
 * [Daily Quote Widget](#daily-quote-widget)
@@ -16,13 +16,17 @@ Here are all of the scriptable widgets I have made.
 * [Tildes Widget](#tildes-widget)
 * [Commander Articles](#commander-articles)
 
-And some scripts
+And some scripts:
 
 * [HTML Widget](https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget)
 * [Git Script Download & Update](#git-script-download-and-update)
 * [RSS Parser](#rss-parser)
 * [Widget Progress Circle](#widget-progress-circle)
-* [Simple Calendar](#simple-calendar) 
+* [Simple Calendar](#simple-calendar)
+
+Then an article:
+
+* [Scriptable Desktop Developer Environment](#scriptable-desktop-developer-environment)
 
 - - - -
 
@@ -314,3 +318,9 @@ This script is a boilerplate for a simple calendar widget
 * Extendable
 
 ![Simple Calendar](images/simple-calendar.PNG)
+
+## Scriptable Desktop Developer Environment
+
+* Set up your desktop for developing Scriptable scripts and widgets in your favourite text editor with JavaScript or TypeScript.
+
+Read [here](https://brettormsby.github.io/Portfolio/posts/scriptable-desktop-developer-environment/)!
