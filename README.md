@@ -23,6 +23,7 @@ And some scripts:
 * [RSS Parser](#rss-parser)
 * [Widget Progress Circle](#widget-progress-circle)
 * [Simple Calendar](#simple-calendar)
+* [Widget Style Chaining](#widget-style-chaining)
 
 Then an article:
 
@@ -318,6 +319,40 @@ This script is a boilerplate for a simple calendar widget
 * Extendable
 
 ![Simple Calendar](images/simple-calendar.PNG)
+
+### Widget Style Chaining
+
+[Widget Style Chaining](scripts/chaining.js)
+
+This script allows you to chain properties for widget-building. For example, previously, you would need to do:
+
+```js
+const widget = new ListWidget()
+
+const title = widget.addText("The Title")
+title.centerAlignText()
+title.font = Font.regularSystemFont(16)
+title.minimumScaleFactor = 0.6
+title.textColor = Color.blue()
+
+widget.presentSmall()
+```
+
+And now you can type:
+
+```js
+const widget = createChainWidget()
+
+widget.addText("The Title")
+  .centerAlignText()
+  .font(Font.regularSystemFont(16))
+  .minimumScaleFactor(0.6)
+  .textColor(Color.blue())
+
+widget.presentSmall()
+```
+
+
 
 ## Scriptable Desktop Developer Environment
 
