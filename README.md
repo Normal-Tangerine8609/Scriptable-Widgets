@@ -24,6 +24,7 @@ And some scripts:
 * [Widget Progress Circle](#widget-progress-circle)
 * [Simple Calendar](#simple-calendar)
 * [Widget Style Chaining](#widget-style-chaining)
+* [HTML Gradient](#html-gradient)
 
 Then an article:
 
@@ -352,6 +353,22 @@ widget.addText("The Title")
 widget.presentSmall()
 ```
 
+### HTML Gradient
+
+[HTML Gradient](scripts/html-gradient.js)
+
+This script is a function that easily creates a liniar gradient from a string similar to HTML linear gradients:
+
+```js
+widget.backgroundGradient = await HTMLGradient(
+  "to top right, #8a2387, rgb(233, 64, 87), hsl(23, 89%, 54%)"
+);
+```
+
+* Supports word and number directions
+* Supports dark and light mode colours
+* Supports all HTML-supported colour formats and alpha values
+* Allows locations to be set
 
 
 ## Scriptable Desktop Developer Environment
