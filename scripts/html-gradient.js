@@ -1,3 +1,6 @@
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
+// icon-color: yellow; icon-glyph: magic;
 /*
  * HTMLGradient
  *
@@ -179,6 +182,12 @@ async function HTMLGradient(gradient) {
   async function colorFromValue(c) {
     if (colorCache.has(c)) return colorCache.get(c);
 
+    // hex colours are supported by scriptable
+    if (/^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/.test(c)) {
+      return new Color(c);
+    }
+
+    // non-hex colours need to be identified
     let w = new WebView();
     await w.loadHTML(`<div id="div"style="color:${c}"></div>`);
     let result = await w.evaluateJavaScript(
