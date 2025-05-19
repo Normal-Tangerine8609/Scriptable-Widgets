@@ -15,6 +15,7 @@ Here are all of the scriptable widgets I have made:
 * [Can I Use](#can-i-use)
 * [Tildes Widget](#tildes-widget)
 * [Commander Articles](#commander-articles)
+* [Pokemon Themes](#pokemon-themes)
 
 And some scripts:
 
@@ -206,6 +207,18 @@ This small or medium widget displays recent articles from [EDHREC](https://edhre
 * Highlight articles you follow
 
 ![Commander Articles](images/commander-articles.JPEG)
+
+### Pokemon Themes
+
+[Pokemon Themes](widgets/pokemon-themes.js)
+
+This medium widget displays a random pokemon using the [PokeAPI](https://pokeapi.co/) and turns the image into a colour theme using [Color Thief](https://lokeshdhakar.com/projects/color-thief/).
+
+* Caches data to partially work offline
+* Tap the widget to open a UI table for copying the colours
+* Provides an example for using [HTML Widget](https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget)
+
+![Pokemon Themes](images/pokemon-themes.jpeg)
 
 ## Scripts
 
