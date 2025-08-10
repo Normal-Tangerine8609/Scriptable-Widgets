@@ -190,11 +190,12 @@ This Lock Screen and Home Screen widget displays the latest browser support data
 
 This small widget displays recent posts from [tildes.net](https://tildes.net/).
 
-* Easily change theme colours
-* Choose sizing variables
+* Easily change theme colours and sizing variables
+* Catch data to use older posts when running offline
 * Choose what posts you want to view using the widget parameters
 
 ![Tildes Widget](images/tildes-widget.JPG)
+![Tildes Medium Widget](images/tildes-widget-medium.jpeg)
 
 ### Commander Articles
 
