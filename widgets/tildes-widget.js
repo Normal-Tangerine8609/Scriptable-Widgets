@@ -306,7 +306,7 @@ async function loadTildesData(query) {
 }
 
 // Function that throws an error if the device is not connected to the internet (or is too slow) when loading a url into a webview
-async function loadUrlWithTimeout(webview, url, timeoutMs = timeoutSeconds) {
+async function loadUrlWithTimeout(webview, url, timeoutMs = timeoutSeconds * 1000) {
   return Promise.race([
     webview.loadURL(url),
     new Promise((_, reject) =>
