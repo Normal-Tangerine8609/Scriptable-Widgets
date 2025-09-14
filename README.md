@@ -1,6 +1,6 @@
 # Scriptable Widgets
 
-Here are all of the scriptable widgets I have made:
+Here are all of the scriptable widgets I have made ordered by oldest to newest:
 
 * [Reddit Text Subreddit Widget](#reddit-text-subreddit-widget)
 * [Daily Quote Widget](#daily-quote-widget)
@@ -16,6 +16,7 @@ Here are all of the scriptable widgets I have made:
 * [Tildes Widget](#tildes-widget)
 * [Commander Articles](#commander-articles)
 * [Pokemon Themes](#pokemon-themes)
+* [Lobsters Widget](#lobsters-widget)
 
 And some scripts:
 
@@ -188,7 +189,7 @@ This Lock Screen and Home Screen widget displays the latest browser support data
 
 [Tildes Widget](widgets/tildes-widget.js)
 
-This small widget displays recent posts from [tildes.net](https://tildes.net/).
+This small or medium widget displays recent posts from [tildes.net](https://tildes.net/).
 
 * Easily change theme colours and sizing variables
 * Catch data to use older posts when running offline
@@ -220,6 +221,18 @@ This medium widget displays a random pokemon using the [PokeAPI](https://pokeapi
 * Provides an example for using [HTML Widget](https://github.com/Normal-Tangerine8609/Scriptable-HTML-Widget)
 
 ![Pokemon Themes](images/pokemon-themes.jpeg)
+
+### Lobsters Widget
+
+[Lobsters Widget](widgets/lobsters-widget.js)
+
+This small or medium widget is mosly a copy of my [Tildes Widget](#tildes-widget) with a new source: [lobste.rs](https://lobste.rs/).
+
+* Easily change theme colours and sizing variables
+* Catch data to use older posts when running offline
+* Choose what posts you want to view using the widget parameters
+
+![Lobsters Widget](images/lobsters-widget.jpeg)
 
 ## Scripts
 
